@@ -1,6 +1,7 @@
 
 *{
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
 }
 body{
   margin: 0;
@@ -66,18 +67,28 @@ figure{
     max-width: 69%;
     border-width: 10px;
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-bottom: 200px;
     text-align: justify;
   }
+
+
 .surveyform{
-    display: flex;
-    margin: auto;
+  
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.survey_img{
+  max-width: 100%;
+  width: 900px;
+  height: 600px;
 }
 .surveytitle{
     position: absolute;
     top: -75px;
-    left: 620px;
+    
     border: 5px  solid rgb(238, 126, 28);
     padding: 28px;
     background-color: white;
@@ -89,7 +100,7 @@ figure{
 .biography_title{
   position: absolute;
   top: 103px;
-  left: 21%;
+  
   border: 5px  solid rgb(238, 126, 28);
   background-color: white;
   font-size: 20px;
@@ -100,7 +111,7 @@ figure{
 .refactor_title{
   position: absolute;
   top: 103px;
-  right: 16%;
+  
   border: 5px  solid rgb(238, 126, 28);
   background-color: white;
   font-size: 20px;
@@ -108,8 +119,9 @@ figure{
   padding: 15px;
 }
 
-/* image of survey and biography */
-.survey{
+/* image of refaactor and biography*/
+.images{
+  max-width: 100%;
   position: relative;
   width: 600px;
   height: 400px;
@@ -118,19 +130,24 @@ figure{
   margin: 100px;
 }
 .section{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/* image of biography */
+.section1{
   position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
   padding: 50px;
 }
-#contact-me{
-  
-  display: block;
-  margin: 0%;
-  text-align: center;
-  padding: 1%;
+footer{
+  display: flex;
+  justify-content: center;
   background-color: #f5b099;
   color: black;
   font-size: 30px;
+  text-align: center;
+  
 }
